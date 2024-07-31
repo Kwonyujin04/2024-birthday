@@ -1,0 +1,126 @@
+body {
+    min-width: 1200px; 
+    max-width: 1450px; 
+    margin: 0 auto; 
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.container {
+    background-color: rgb(227, 255, 235);
+    min-width: 1300px; 
+    max-width: 1450px; 
+    display: flex; 
+    position: relative;
+    align-items: center; 
+    flex-direction: row;
+}
+
+#logo_img {
+    width: 150px; 
+    height: auto; 
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    position: absolute;
+    left: 230px;
+    top: 40px;
+}
+
+.navbar-nav .nav-link {
+    white-space: nowrap; /* 메뉴 항목이 줄 바꿈되지 않도록 설정 */
+}
+
+#main_img {
+    min-width: 1200px; /* 단위 추가 */
+    max-width: 1450px; /* 단위 추가 */
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.content-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-box header h3 {
+    margin: 10px 0;
+}
+
+.content-box header h6 {
+    margin-bottom: 20px;
+    color: grey;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 40px); 
+    margin: 10px; 
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box; 
+}
+
+.card figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.card figure img {
+    width: 100%;
+    height: auto;
+}
+
+.card p{
+    margin: 0 auto;
+    margin: 20px;
+}
+
+.to_name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#foot ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#foot ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#foot ul li a {
+    color: #000;
+    text-decoration: none;
+}
