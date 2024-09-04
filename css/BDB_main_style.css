@@ -1,61 +1,49 @@
 body {
     min-width: 1200px; 
-    max-width: 1450px; 
+    max-width: 1420px; 
     margin: 0 auto; 
 }
 
 header {
-    width: 100%;
+    width: 1420px;
+    flex: auto;
+    position: relative;
 }
 
-.navbar {
-    width: 100%;
-}
-
-.container {
+#top_header {
+    width: 600px;
+    height: 100px;
     background-color: rgb(227, 255, 235);
-    min-width: 1300px; 
-    max-width: 1450px; 
-    display: flex; 
+    border-radius: 30px;
+    border: 3px solid rgb(189, 236, 202);
+    margin: 20px auto;
     position: relative;
     align-items: center; 
     flex-direction: row;
 }
 
-#logo_img {
-    width: 150px; 
-    height: auto; 
-    margin-left: 20px;
-}
-
-.navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 20px !important;
+#navbar_brand {
     position: absolute;
-    left: 230px;
-    top: 40px;
+    top: -7px;
+    left: 38%;
+    width: 170px;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
 }
 
-.navbar-nav .nav-link {
-    white-space: nowrap; /* 메뉴 항목이 줄 바꿈되지 않도록 설정 */
-}
-
-#main_img {
-    min-width: 1200px; /* 단위 추가 */
-    max-width: 1450px; /* 단위 추가 */
-    height: 500px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+#navbar_brand img {
+    width: 170px;
 }
 
 .content-box {
     text-align: center;
+    position: relative;
     padding: 20px;
 }
 
 .content-box header h3 {
-    margin: 10px 0;
+    position: absolute;
+    margin: 0 auto;
 }
 
 .content-box header h6 {
