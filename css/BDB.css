@@ -134,6 +134,15 @@ header {
     justify-content: center;
 }
 
+.post_container {
+    width: 100px;
+    background-color: blue;
+}
+
+.post_container img {
+    width: 100%;
+}
+
 .menu {
     width: 250px;
     height: auto;
