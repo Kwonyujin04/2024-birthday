@@ -13,11 +13,7 @@
 <body>
     <div class="content_box">
         <header>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <img id="menu_toggle" src="img/menu_button" alt="menu-img">
             </label>
             <div class="top_logo">
                 <a href="/index.html">
@@ -26,12 +22,14 @@
             </div>
         </header>
         <div id="body_box">
+            <div id="to-day"></div>
             <div id="post_box">
-                <p>BDB Talk에 오신 것을 환영합니다!</p>
                 <div id="post_container"></div>
             </div>
         </div>
-    </div>
+        <div id="grad_box">
+            <img src="/img/BDB_kkikki_img.png" alt="끼끼">
+        </div>
     </div>
     <div class="menu_position">
         <div class="menu_box">
@@ -43,20 +41,19 @@
             </ul>
             <div class="profile">
                 <div class="profile_img">
-                    <img src="img/profile_img.JPG" alt="">
+                    <img src="img/profile_img.JPG" alt="profile">
                 </div>
                 <div class="my_name">
                     <span>권유진</span>
-                    <!-- <span class="user_info">D-XX</span> -->
+                    <span id="d-day"></span>
                 </div>
             </div>
         </div>
     </div>
-    <div id="grad_box">
-        <img src="" alt="">
-    </div>
     <script src="/src/components/PostDisplay.js" type="module"></script>
     <script src="/js/masonryLayout.js"></script>
+    <script src="/js/menu_popup.js"></script>
+    <script src="/js/Dday.js"></script>
 </body>
 
 </html>

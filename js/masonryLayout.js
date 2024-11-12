@@ -3,6 +3,6 @@ $(document).ready(function () {
         itemSelector: '.post',
         columnWidth: '.post',
         columnWidth: '.post-sizer',
-        percentPosition: true,
+        percentPosition: true
     });
 });
