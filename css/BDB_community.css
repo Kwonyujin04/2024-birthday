@@ -204,9 +204,6 @@ header {
     list-style: none;
 }
 
-.menu li {
-    padding: 12px;
-}
 
 .menu li a:link {
     font-size: 17px;
