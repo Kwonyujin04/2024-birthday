@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&display=swap');
+
+body {
+    background-color: #dbe2eb;
+    padding: 0 10px;
+    max-width: 1400px;
+    min-width: 400px;
+    position: relative;
+}
+
+.content_box {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 5px #b7c5db;
+    border-radius: 10px;
+    max-width: 1400px;
+    min-width: 400px;
+    min-height: 100%;
+    position: relative;
+    margin: 30px auto;
+    padding-bottom: 10px;
+
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid #b7c5db;
+}
+
+.top_logo {
+    background-color: #ffffff;
+    width: 50%;
+    max-width: 400px;
+    max-height: 50px;
+    border-radius: 50px;
+    margin-top: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 8px 5px #b9f5c7;
+}
+
+.top_logo img {
+    width: 100%;
+    max-width: 100px;
+    margin-top: -12px;
+    margin-left: 10px;
+}
+
+#menu_toggle {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+#body_box {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.main_img {
+    width: 78%;
+    height: auto;
+    overflow: hidden;
+    top: 10px;
+}
+
+.main_img img {
+    width: 100%;
+}
+
+#post_box {
+    width: 78%;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    top: 200px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.post {
+    background-color: #d9d9d9;
+    min-width: 150px;
+    width: calc(33.333% - 50px);
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.post:nth-child(1) {
+    background-color: rgb(245, 146, 186);
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.post:nth-child(1) span {
+    color: aliceblue;
+}
+
+#to_community {
+    text-align: right;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post img {
+    width: 100%;
+}
+
+.post_container {
+    width: 100px;
+}
+
+.post_container img {
+    width: 100%;
+}
+
+.menu_position {
+    width: 20%;
+    height: 60%;
+    right: 25px;
+    top: 130px;
+    z-index: 150;
+    position: fixed;
+
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.menu_box {
+    background-color: #f0f6fd;
+    box-shadow: 0 0 7px 5px #cfddf3;
+    border-radius: 10px;
+    width: 180px;
+    min-height: 300px;
+    height: 100%;
+    max-height: 400px;
+
+    position: relative;
+    justify-content: center;
+}
+
+.menu {
+    width: 70%;
+    position: absolute;
+    margin-top: 10px;
+    left: -5px;
+    list-style: none;
+}
+
+.menu li {
+    margin-top: 20px;
+    text-decoration-color: #414141;
+}
+
+.menu li a:link {
+    font-size: 12px;
+    text-decoration: none;
+    color: #414141;
+}
+
+.menu li a:hover {
+    color: #afe7c9;
+}
+
+.profile {
+    width: 90%;
+    height: 70px;
+    background-color: #ffffff;
+    border: 2px solid #ccd6e4;
+    box-shadow: 0 0 7px 5px #cfddf3;
+    border-radius: 40px;
+
+    font-size: 12px;
+    color: #414141;
+
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+
+    display: flex;
+}
+
+.profile_img {
+    border-radius: 50%;
+    background-color: azure;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
+    margin: 16px 0 16px 16px;
+}
+
+.profile_img img {
+    width: 100%;
+    z-index: 100;
+}
+
+.my_name {
+    margin: 12px;
+    margin-top: 14px;
+    display: grid;
+}
+
+#d-day {
+    color: #ff3eaa;
+}
+
+
+@media (max-width: 900px) {
+    .menu_position {
+        display: none;
+    }
+
+    .menu_position.active {
+        width: 300px;
+        display: block;
+        max-width: 350px;
+    }
+
+    .menu_box {
+        width: 100%;
+    }
+
+    #menu_toggle {
+        display: block;
+    }
+
+    #post_box {
+        width: 100%;
+    }
+
+    .main_img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .post {
+        width: 50%;
+    }
+}

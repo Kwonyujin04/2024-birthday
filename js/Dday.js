@@ -1,8 +1,8 @@
 const today = new Date();
-const todayDateElement = document.getElementById("to-day");
+const todayDate = document.getElementById("to-day");
 
-if (todayDateElement) {
-    todayDateElement.textContent = `${today.getMonth() + 1}월 ${today.getDate()}일 생 여러분 생일 축하드립니다.`;
+if (todayDate) {
+    todayDate.textContent = `${today.getMonth() + 1}월 ${today.getDate()}일 생 여러분 생일 축하드립니다.`;
 }
 
 const birthdayMonth = 9;
@@ -15,9 +15,14 @@ if (today > birthday) {
 }
 
 // 생일까지 남은 일수 계산
-const differenceInTime = birthday.getTime() - today.getTime();
-const differenceInDays = Math.ceil(differenceInTime / (1000 * 60 * 60 * 24));
+const differenceTime = birthday.getTime() - today.getTime();
+const differenceDays = Math.ceil(differenceTime / (1000 * 60 * 60 * 24));
 
 // 생일까지 남은 D-Day 출력
-const birthdayDDayElement = document.getElementById("d-day");
-birthdayDDayElement.textContent = differenceInDays === 0 ? "오늘이 생일입니다!" : `D - ${differenceInDays}`;
+const DDay = document.getElementById("d-day");
+DDay.textContent = differenceDays === 0 ? "오늘 생일!" : `D - ${differenceDays}`;
+
+const DDayInfo = document.getElementById("d-day_info");
+if (DDayInfo) {
+    DDayInfo.textContent = differenceDays === 0 ? "오늘이 생일입니다. " : `생일까지 ${differenceDays}일 남았습니다. `
+}

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/my-page.css">
-    <title>BirthDayBuddy_my_page</title>
+    <link rel="stylesheet" href="css/random.css">
+    <title>BirthDayBuddy_random</title>
 </head>
 
 <body>
@@ -20,36 +20,21 @@
             </div>
         </header>
         <div id="body_box">
-            <div id="top_box">
-                <div id="user_info">
-                    <img src="img/profile_img.JPG" alt="profile">
-                    <div class="disc">
-                        <span>권유진</span>
-                        <span>2004.09.12</span>
-                        <span id="d-day_info"></span>
-                    </div>
-                </div>
-                <div id="category_position">
-                    <div id="category_box">
-                        <button class="category" onclick="cateClick()">작성한 글</button>
-                        <button class="category" onclick="cateClick()">좋아한 글</button>
-                        <button class="category" onclick="cateClick()">받은 글</button>
-                    </div>
-                </div>
+            <div id="top_box2">
+                <span>이런! 아직 선물을 받을 수 없어요. </span>
+                <p>BDB에서 버디들의 생일을 축하해주면 선물을 받을 수 있어요. </p>
             </div>
-            <!-- <div id="post_box">
-                <div id="post_container"></div>
-            </div> -->
+            <div id="post_box">
+                <div class="post"></div>
+                <div class="post"></div>
+                <div class="post"></div>
+            </div>
         </div>
-    </div>
-    <div id="grad_box">
-        <div></div>
-        <img src="/img/BDB_kkikki_party.png" alt="끼끼">
     </div>
     <div class="menu_position">
         <div class="menu_box">
             <ul class="menu">
-                <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
+                <li class="menu_detail"><a href="/BDB_random_hint.html" id="random_link">선물받기</a></li>
                 <li class="menu_detail"><a href="">축하메시지 작성하기</a></li>
                 <li class="menu_detail"><a href="">마이페이지</a></li>
                 <li class="menu_detail"><a href="/BDB_community.html">커뮤니티 가기</a></li>
@@ -67,7 +52,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="/src/components/PostDisplay.js" type="module"></script>
     <script src="/js/masonryLayout.js"></script>
     <script src="/js/menu_popup.js"></script>
     <script src="/js/Dday.js"></script>

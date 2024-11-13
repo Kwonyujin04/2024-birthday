@@ -1,5 +1,4 @@
 import { postDummy } from "../postDummy.js";
-import { clickLike } from "../../js/likeBtn.js";
 
 function displayPosts(posts) {
     const postContainer = document.getElementById('post_container'); // 게시물 추가할 요소 선택
@@ -46,12 +45,6 @@ function displayPosts(posts) {
             clickLike();
         });
         postElement.appendChild(likeBtn);
-
-        // // 날짜 div 생성
-        // const dateDiv = document.createElement('div');
-        // dateDiv.className = 'post_date';
-        // dateDiv.innerText = `날짜: ${post.date || '날짜 없음'}`; // 날짜 설정
-        // postElement.appendChild(dateDiv); // 게시물 요소에 날짜 div 추가
 
         // 게시물 요소를 컨테이너에 추가
         postDisplay.appendChild(postElement);
