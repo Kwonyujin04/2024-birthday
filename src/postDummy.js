@@ -25,6 +25,16 @@ export const postDummy = [
     },
     {
         id: 3,
+        to_name: '최선아',
+        from_name: '김가영',
+        postContent: `생일 축하해! 지금까지의 여정이 결코 쉬운 길만은 아니었지만, 그 속에서 너는 많은 사람에게 소중한 존재가 되어줬어. 
+        너의 생일을 맞아 그동안의 모든 수고가 보상받고, 앞으로의 시간이 너에게 더 큰 축복으로 다가오기를 진심으로 바랄게!`,
+        date: '2024-11-04',
+        img: "",
+        back_color: '#FFFACC'
+    },
+    {
+        id: 4,
         to_name: '주댕치',
         from_name: '권유진',
         postContent: `Happy Birthday! 언제나 주변을 따뜻하게 만들어주는 너에게 오늘 하루가 진정한 축복과도 같기를 바래. 
@@ -33,16 +43,6 @@ export const postDummy = [
         date: '2024-11-03',
         img: '../../img/id2_img.jpg',
         back_color: '#CEFDD3'
-    },
-    {
-        id: 4,
-        to_name: '최선아',
-        from_name: '김가영',
-        postContent: `생일 축하해! 지금까지의 여정이 결코 쉬운 길만은 아니었지만, 그 속에서 너는 많은 사람에게 소중한 존재가 되어줬어. 
-        너의 생일을 맞아 그동안의 모든 수고가 보상받고, 앞으로의 시간이 너에게 더 큰 축복으로 다가오기를 진심으로 바랄게!`,
-        date: '2024-11-04',
-        img: "",
-        back_color: '#FFFACC'
     },
     {
         id: 5,
@@ -54,5 +54,32 @@ export const postDummy = [
         date: '2024-11-03',
         img: '',
         back_color: '#E1E5FE'
+    },
+    {
+        id: 6,
+        to_name: "",
+        from_name: ' ',
+        postContent: ``,
+        date: '',
+        img: '',
+        back_color: '#CBF3FE'
+    },
+    {
+        id: 7,
+        to_name: "",
+        from_name: ' ',
+        postContent: ``,
+        date: '',
+        img: '',
+        back_color: '#FFE6EE'
+    },
+    {
+        id: 8,
+        to_name: "",
+        from_name: ' ',
+        postContent: ``,
+        date: '',
+        img: '',
+        back_color: '#FFFACC'
     }
 ];

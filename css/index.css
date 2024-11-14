@@ -4,21 +4,21 @@
 
 body {
     background-color: #dbe2eb;
-    padding: 0 10px;
-    max-width: 1400px;
-    min-width: 400px;
+    width: 98%;
+    height: 100%;
     position: relative;
+    align-content: center;
+    justify-content: center;
 }
 
 .content_box {
     background-color: #ffffff;
     box-shadow: 0 0 10px 5px #b7c5db;
     border-radius: 10px;
-    max-width: 1400px;
-    min-width: 400px;
-    min-height: 100%;
+    max-width: 98%;
+    height: 100%;
     position: relative;
-    margin: 30px auto;
+    margin: 10px;
     padding-bottom: 10px;
 
     font-family: "Nanum Gothic", sans-serif;
@@ -90,7 +90,6 @@ header {
     flex-wrap: wrap;
     top: 200px;
     gap: 40px;
-    justify-content: center;
 }
 
 .post {

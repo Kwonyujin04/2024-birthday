@@ -16,7 +16,7 @@ function displayPosts(posts) {
 
         const toNameDiv = document.createElement('div');
         toNameDiv.className = 'to_name';
-        toNameDiv.innerText = `${post.to_name}에게`;
+        toNameDiv.innerText = `${post.to_name}에게` || "";
         postElement.appendChild(toNameDiv);
 
         if (post.img) {
@@ -33,10 +33,13 @@ function displayPosts(posts) {
         contentDiv.innerText = post.postContent; // 게시물 내용 설정
         postElement.appendChild(contentDiv); // 게시물 요소에 게시물 내용 div 추가
 
+        const rightElement = document.createElement('div');
+        rightElement.className = 'right_content';
+
         const fromNameDiv = document.createElement('div');
         fromNameDiv.className = 'from_name';
         fromNameDiv.innerText = post.from_name || '익명';
-        postElement.appendChild(fromNameDiv);
+        rightElement.appendChild(fromNameDiv);
 
         const likeBtn = document.createElement('span');
         likeBtn.className = 'like_btn';
@@ -45,15 +48,10 @@ function displayPosts(posts) {
             likeBtn.innerText = likeBtn.innerText === '♡' ? '♥' : '♡'; // 좋아요 토글
             clickLike();
         });
-        postElement.appendChild(likeBtn);
-
-        // // 날짜 div 생성
-        // const dateDiv = document.createElement('div');
-        // dateDiv.className = 'post_date';
-        // dateDiv.innerText = `날짜: ${post.date || '날짜 없음'}`; // 날짜 설정
-        // postElement.appendChild(dateDiv); // 게시물 요소에 날짜 div 추가
+        rightElement.appendChild(likeBtn);
 
         // 게시물 요소를 컨테이너에 추가
+        postElement.appendChild(rightElement);
         postDisplay.appendChild(postElement);
         postContainer.appendChild(postDisplay);
     });
