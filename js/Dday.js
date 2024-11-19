@@ -1,5 +1,11 @@
 const today = new Date();
 const todayDate = document.getElementById("to-day");
+const writeDate = document.getElementById("write_date");
+
+if (writeDate) {
+    writeDate.value = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate() + 1}`;
+    writeDate.min = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate() + 1}`;
+}
 
 if (todayDate) {
     todayDate.textContent = `${today.getMonth() + 1}월 ${today.getDate()}일생 여러분 생일 축하드립니다.`;
@@ -20,7 +26,9 @@ const differenceDays = Math.ceil(differenceTime / (1000 * 60 * 60 * 24));
 
 // 생일까지 남은 D-Day 출력
 const DDay = document.getElementById("d-day");
-DDay.textContent = differenceDays === 0 ? "오늘 생일!" : `D - ${differenceDays}`;
+if (DDay) {
+    DDay.textContent = differenceDays === 0 ? "오늘 생일!" : `D - ${differenceDays}`;
+}
 
 const DDayInfo = document.getElementById("d-day_info");
 if (DDayInfo) {

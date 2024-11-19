@@ -29,17 +29,11 @@
                         <span id="d-day_info"></span>
                     </div>
                 </div>
-                <div id="category_position">
-                    <div id="category_box">
-                        <button class="category" onclick="cateClick()">작성한 글</button>
-                        <button class="category" onclick="cateClick()">좋아한 글</button>
-                        <button class="category" onclick="cateClick()">받은 글</button>
-                    </div>
+                <p>내가 작성한 글</p>
+                <div id="post_box">
+                    <div id="post_container"></div>
                 </div>
             </div>
-            <!-- <div id="post_box">
-                <div id="post_container"></div>
-            </div> -->
         </div>
     </div>
     <div id="grad_box">
@@ -50,9 +44,9 @@
         <div class="menu_box">
             <ul class="menu">
                 <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
-                <li class="menu_detail"><a href="">축하메시지 작성하기</a></li>
-                <li class="menu_detail"><a href="">마이페이지</a></li>
-                <li class="menu_detail"><a href="/BDB_community.html">커뮤니티 가기</a></li>
+                <li class="menu_detail"><a href="BDB_writePost.html">축하메시지 작성하기</a></li>
+                <li class="menu_detail"><a href="BDB_my_page.html">마이페이지</a></li>
+                <li class="menu_detail"><a href="BDB_community.html">커뮤니티 가기</a></li>
             </ul>
             <div class="profile">
                 <div class="profile_img">
@@ -67,7 +61,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="/src/components/PostDisplay.js" type="module"></script>
+    <script src="/src/components/myPostDisplay.js" type="module"></script>
     <script src="/js/masonryLayout.js"></script>
     <script src="/js/menu_popup.js"></script>
     <script src="/js/Dday.js"></script>

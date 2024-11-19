@@ -54,32 +54,5 @@ export const postDummy = [
         date: '2024-11-03',
         img: '',
         back_color: '#E1E5FE'
-    },
-    {
-        id: 6,
-        to_name: "",
-        from_name: ' ',
-        postContent: ``,
-        date: '',
-        img: '',
-        back_color: '#CBF3FE'
-    },
-    {
-        id: 7,
-        to_name: "",
-        from_name: ' ',
-        postContent: ``,
-        date: '',
-        img: '',
-        back_color: '#FFE6EE'
-    },
-    {
-        id: 8,
-        to_name: "",
-        from_name: ' ',
-        postContent: ``,
-        date: '',
-        img: '',
-        back_color: '#FFFACC'
     }
 ];

@@ -16,6 +16,7 @@ function getRandom(max, win) {
         alert("초콜릿 당첨입니다. ");
     }
 
+    localStorage.setItem("likeCount", "false");
     localStorage.setItem("getComp", "true");
 }
 

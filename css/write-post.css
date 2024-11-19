@@ -4,25 +4,21 @@
 
 body {
     background-color: #dbe2eb;
-    padding: 0 10px;
-    max-width: 1400px;
-    min-width: 250px;
+    width: 98%;
+    height: 100%;
     position: relative;
-}
-
-.body_box {
-    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .content_box {
     background-color: #ffffff;
-    box-shadow: 0 0 10px 2px #b7c5db;
+    box-shadow: 0 0 10px 5px #b7c5db;
     border-radius: 10px;
-    max-width: 1300px;
-    min-width: 250px;
-    height: 1000px;
+    max-width: 98%;
+    height: 100%;
     position: relative;
-    margin: 30px auto;
+    margin: 10px;
     padding-bottom: 10px;
 
     font-family: "Nanum Gothic", sans-serif;
@@ -78,121 +74,87 @@ header {
 
 #top_box {
     width: 75%;
-    height: 200px;
+    height: 60px;
+    margin-top: 20px;
     position: relative;
-    align-content: center;
-    margin: 15px;
+    justify-items: center;
+}
 
+#top_box label {
     font-family: "Nanum Gothic", sans-serif;
     font-style: normal;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-#category_position {
-    position: absolute;
-    width: 200px;
-    right: 0px;
-    top: 0px;
-    max-width: 300px;
-    height: 150px;
+#write_date {
+    width: 100px;
 }
 
-#user_info {
-    width: 100%;
-    display: flex;
-    margin-left: 40px;
+#color_box {
+    width: 170px;
 }
 
-#user_info img {
-    width: 180px;
+.color_button {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
     border-radius: 50%;
-    box-shadow: 0 0 8px 5px #dbe2eb;
 }
 
-.disc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
-    color: #414141;
+.blue {
+    background-color: #CBF3FE;
+    border: 1.5px solid #74c4db;
 }
 
-.disc span:nth-child(1) {
+.pink {
+    background-color: #FFE6EE;
+    border: 1.5px solid #fab8cd;
+}
+
+.yellow {
+    background-color: #FFFACC;
+    border: 1.5px solid #d2c86e;
+}
+
+.green {
+    background-color: #CEFDD3;
+    border: 1.5px solid #7dca85;
+}
+
+.purple {
+    background-color: #E1E5FE;
+    border: 1.5px solid #a1acf4;
+}
+
+#to-day {
+    font-size: 16px;
     font-weight: bold;
-}
-
-.disc span:nth-child(3) {
-    color: #ff3eaa;
-    font-weight: bold;
+    top: 10px;
+    text-align: center;
 }
 
 #post_box {
-    margin-top: 20px;
-    width: 78%;
+    width: 75%;
     min-height: 150px;
     display: flex;
     flex-wrap: wrap;
     top: 200px;
     gap: 40px;
     justify-content: center;
+    margin: 10px;
 }
 
-/* 포스트를 담고 있는 박스 */
-#post_container {
-    width: 100%;
-    column-count: 3;
-    position: relative;
-    left: 10px;
-}
-
-/* 포스트 크기를 정해주는 박스 */
-.post_sizer {
-    width: 80%;
-}
-
-/* 포스트 콘텐츠가 담긴 박스 */
-.post {
+#post_content {
+    width: 70%;
     border-radius: 10px;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
+    background-color: #CBF3FE;
     box-shadow: 0 0 5px 3px #f5fbfa;
     font-size: 12px;
-
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.post_content {
-    color: #414141;
-    margin: 5px 0;
-}
-
-.to_name {
-    font-weight: bold;
-}
-
-.from_name {
-    font-weight: bold;
-}
-
-.post img {
-    width: 100%;
-    justify-content: center;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.like_btn {
-    display: flex;
-    cursor: pointer;
-    padding-top: 10px;
-    margin-left: 160px;
-    font-size: 20px;
+    align-items: center;
 }
 
 .menu_position {
@@ -288,8 +250,7 @@ header {
 }
 
 #grad_box {
-    width: 76%;
-    min-width: 200px;
+    width: 80%;
 
     bottom: 0px;
     margin-bottom: 10px;
@@ -303,7 +264,7 @@ header {
     height: 100px;
 
     background-color: #ffffff;
-    box-shadow: 0 -5px 10px #ffffff;
+    box-shadow: 0 -5px 15px #ffffff;
 }
 
 #grad_box img {
@@ -333,7 +294,7 @@ header {
     }
 
     #post_box {
-        width: 100%;
+        width: 95%;
     }
 
     #to-day {
@@ -355,42 +316,13 @@ header {
     }
 }
 
-@media (max-width: 600px) {
-    #top_box {
-        margin: 0;
-    }
-
-    #category_position {
-        position: relative;
-        margin-top: 10px;
-        left: 30px;
-        display: flex;
-        flex-direction: row;
-        height: 100px;
-        width: 100%;
-    }
-
-    #category_box {
-        width: 100%;
-    }
-
-    .category {
-        width: 30%;
-    }
-}
-
 @media (max-width: 500px) {
+    #post_box {
+        width: 90%;
+        left: 2px;
+    }
+
     #post_container {
         column-count: 1;
-        left: 20px;
-    }
-
-    #user_info {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 20%;
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
     }
 }

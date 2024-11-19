@@ -84,21 +84,23 @@ header {
 }
 
 #post_box {
-    width: 78%;
-    min-height: 150px;
+    width: 75%;
+    min-height: 100px;
     display: flex;
     flex-wrap: wrap;
     top: 200px;
     gap: 40px;
+    justify-content: center;
+    margin: 15px;
 }
 
 .post {
     background-color: #d9d9d9;
-    min-width: 150px;
-    width: calc(33.333% - 50px);
-    height: 150px;
     border-radius: 10px;
     overflow: hidden;
+    width: 30%;
+    gap: 15px;
+    row-gap: 15px;
     position: relative;
 }
 
@@ -107,6 +109,7 @@ header {
     font-size: 14px;
     text-align: left;
     box-sizing: border-box;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -249,7 +252,7 @@ header {
     }
 
     #post_box {
-        width: 100%;
+        width: 95%;
     }
 
     .main_img {

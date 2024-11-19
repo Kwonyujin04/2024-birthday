@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/community.css">
-    <title>BirthDayBuddy_talk</title>
+    <link rel="stylesheet" href="css/write-post.css">
+    <title>BirthDayBuddy_write</title>
 </head>
 
 <body>
@@ -21,15 +21,34 @@
         </header>
         <div id="body_box">
             <div id="top_box">
-                <div id="to-day"></div>
+                <label for="write_date">전달 날짜:</label>
+                <input type="date" id="write_date" value="" min="" />
+                <div id="color_box">
+                    <button class="color_button blue" data-color="#CBF3FE"> </button>
+                    <button class="color_button pink" data-color="#FFE6EE"> </button>
+                    <button class="color_button yellow" data-color="#FFFACC"> </button>
+                    <button class="color_button green" data-color="#CEFDD3"> </button>
+                    <button class="color_button purple" data-color="#E1E5FE"> </button>
+                </div>
             </div>
             <div id="post_box">
-                <div id="post_container"></div>
+                <div id="post_content">
+                    <table>
+                        <tr>
+                            <td>제목</td>
+                            <td><input type="text" id="to_name" placeholder="축하할 이름을 적어주세요. " /></td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td><textarea id="content" placeholder="내용을 입력하세요. "></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>권유진</td>
+                        </tr>
+                    </table>
+                    <button id="register">등록</button>
+                </div>
             </div>
-        </div>
-        <div id="grad_box">
-            <div></div>
-            <img src="/img/BDB_kkikki_party.png" alt="끼끼">
         </div>
     </div>
     <div class="menu_position">
@@ -53,11 +72,10 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="/src/components/PostDisplay.js" type="module"></script>
-    <script src="/js/masonryLayout.js"></script>
+    <script src="js/writePost.js"></script>
     <script src="/js/menu_popup.js"></script>
     <script src="/js/Dday.js"></script>
-    <script src="/js/likeBtn.js" type="module" defer></script>
+    <script src="js/colorBtn.js"></script>
 </body>
 
 </html>
