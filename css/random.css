@@ -4,22 +4,21 @@
 
 body {
     background-color: #dbe2eb;
-    padding: 0 10px;
-    max-width: 1400px;
-    min-width: 400px;
-    height: auto;
+    width: 98%;
+    height: 100%;
     position: relative;
+    align-content: center;
+    justify-content: center;
 }
 
 .content_box {
     background-color: #ffffff;
-    box-shadow: 0 0 10px 2px #b7c5db;
+    box-shadow: 0 0 10px 5px #b7c5db;
     border-radius: 10px;
-    max-width: 1300px;
-    min-width: 250px;
-    min-height: 410px;
+    max-width: 98%;
+    height: 100%;
     position: relative;
-    margin: 30px auto;
+    margin: 10px;
     padding-bottom: 10px;
 
     font-family: "Nanum Gothic", sans-serif;
@@ -75,51 +74,37 @@ header {
 
 #top_box {
     width: 75%;
-    height: 300px;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-bottom: 100px;
 
     font-family: "Nanum Gothic", sans-serif;
     font-style: normal;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 #top_box span {
     font-weight: bold;
-    font-size: 15px;
-}
-
-#top_box2 {
-    width: 75%;
-    height: 100px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    font-family: "Nanum Gothic", sans-serif;
-    font-style: normal;
-    font-size: 11px;
-}
-
-#top_box2 span {
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 #random_box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 #random_box img {
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    width: 40%;
+    max-width: 300px;
+    height: auto;
 }
 
 #random_box button {
@@ -143,7 +128,7 @@ header {
     font-family: "Nanum Gothic", sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: large;
+    font-size: 30px
 }
 
 #random_box button:hover {
@@ -153,41 +138,20 @@ header {
     border: 2px solid #89cca8;
 }
 
-
-
-#post_box {
-    width: 78%;
-    min-height: 100px;
-    top: 100px;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
+#kkikki_mini {
+    display: none;
 }
 
-.post {
-    background-color: #d9d9d9;
-    min-width: 100px;
-    width: calc(33.333% - 50px);
-    height: 200px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
+#kkikki_mini img {
+    width: 100px;
 }
 
-
-.to_name {
-    font-weight: bold;
-}
-
-.from_name {
-    font-weight: bold;
-}
-
-.post img {
-    width: 100%;
-    justify-content: center;
-    border-radius: 10px;
-    margin-top: 20px;
+#kkikki_mini.active {
+    display: block;
+    top: -20px;
+    left: -65px;
+    position: absolute;
+    z-index: 200;
 }
 
 .menu_position {
@@ -207,10 +171,11 @@ header {
     background-color: #f0f6fd;
     box-shadow: 0 0 7px 5px #cfddf3;
     border-radius: 10px;
-    width: 180px;
+    min-width: 160px;
+    max-width: 220px;
     min-height: 300px;
     height: 100%;
-    max-height: 400px;
+    max-height: 500px;
 
     position: relative;
     justify-content: center;
@@ -226,17 +191,20 @@ header {
 
 .menu li {
     margin-top: 20px;
-    text-decoration-color: #414141;
 }
 
 .menu li a:link {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #414141;
 }
 
+.menu li a:visited {
+    color: #414141;
+}
+
 .menu li a:hover {
-    color: #afe7c9;
+    color: #b9f5c7;
 }
 
 .profile {
@@ -306,14 +274,21 @@ header {
         display: none;
     }
 
-    .menu_box {
-        width: 100%;
-    }
 
     .menu_position.active {
-        width: 300px;
+        width: 45%;
+        height: 400px;
+        max-height: 500px;
         display: block;
-        max-width: 400px;
+        position: absolute;
+        margin: 5px;
+        top: 80px;
+    }
+
+    .menu_box {
+        width: 100%;
+        position: absolute;
+        right: 0;
     }
 
     #menu_toggle {
@@ -321,15 +296,21 @@ header {
     }
 
     #post_box {
-        width: 100%;
+        width: 95%;
     }
 
     #to-day {
-        width: 100%;
+        width: 95%;
     }
 
     #grad_box {
         width: 95%;
+        position: absolute;
+        left: 15px;
+    }
+
+    #grad_box div {
+        width: 100%;
     }
 
     #top_box {

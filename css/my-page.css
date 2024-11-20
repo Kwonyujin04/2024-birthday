@@ -4,25 +4,21 @@
 
 body {
     background-color: #dbe2eb;
-    padding: 0 10px;
-    max-width: 1400px;
-    min-width: 250px;
+    width: 98%;
+    height: 100%;
     position: relative;
-}
-
-.body_box {
-    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .content_box {
     background-color: #ffffff;
-    box-shadow: 0 0 10px 2px #b7c5db;
+    box-shadow: 0 0 10px 5px #b7c5db;
     border-radius: 10px;
-    max-width: 1300px;
-    min-width: 250px;
-    height: 1000px;
+    max-width: 98%;
+    height: 100%;
     position: relative;
-    margin: 30px auto;
+    margin: 10px;
     padding-bottom: 10px;
 
     font-family: "Nanum Gothic", sans-serif;
@@ -74,47 +70,43 @@ header {
     width: 100%;
     justify-content: center;
     position: relative;
+    padding-bottom: 150px;
 }
 
 #top_box {
     width: 75%;
-    height: 200px;
     position: relative;
-    align-content: center;
-    margin: 15px;
+    margin: 20px;
 
     font-family: "Nanum Gothic", sans-serif;
     font-style: normal;
-    font-size: 14px;
-}
-
-#category_position {
-    position: absolute;
-    width: 200px;
-    right: 0px;
-    top: 0px;
-    max-width: 300px;
-    height: 150px;
+    font-size: 15px;
 }
 
 #user_info {
-    width: 100%;
+    width: 98%;
+    position: relative;
     display: flex;
-    margin-left: 40px;
+    flex-wrap: wrap;
+    left: 70px;
 }
 
 #user_info img {
-    width: 180px;
+    min-width: 150px;
+    width: 30%;
+    max-width: 220px;
     border-radius: 50%;
     box-shadow: 0 0 8px 5px #dbe2eb;
+    margin-right: 30px;
 }
 
 .disc {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 10px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     color: #414141;
 }
 
@@ -127,72 +119,95 @@ header {
     font-weight: bold;
 }
 
+#category {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px;
+    margin-left: 40px;
+    color: #414141;
+}
+
 #post_box {
-    margin-top: 20px;
-    width: 78%;
+    width: 75%;
     min-height: 150px;
     display: flex;
     flex-wrap: wrap;
     top: 200px;
     gap: 40px;
     justify-content: center;
+    margin: 15px;
 }
 
 /* 포스트를 담고 있는 박스 */
 #post_container {
     width: 100%;
     column-count: 3;
+    gap: 15px;
+    row-gap: 15px;
     position: relative;
-    left: 10px;
 }
 
 /* 포스트 크기를 정해주는 박스 */
 .post_sizer {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 /* 포스트 콘텐츠가 담긴 박스 */
 .post {
     border-radius: 10px;
     width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
     box-shadow: 0 0 5px 3px #f5fbfa;
-    font-size: 12px;
+    font-size: 14px;
+    align-items: center;
 
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
     overflow: hidden;
-    justify-content: center;
 }
 
 .post_content {
     color: #414141;
-    margin: 5px 0;
+    margin: 10px;
 }
 
 .to_name {
     font-weight: bold;
+    margin: 10px;
+}
+
+.post_img {
+    width: 91%;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.right_content {
+    text-align: right;
+    margin-bottom: 10px;
 }
 
 .from_name {
     font-weight: bold;
+    margin: 10px;
 }
 
-.post img {
-    width: 100%;
-    justify-content: center;
-    border-radius: 10px;
-    margin-top: 20px;
+#kkikki_mini {
+    display: none;
 }
 
-.like_btn {
-    display: flex;
-    cursor: pointer;
-    padding-top: 10px;
-    margin-left: 160px;
-    font-size: 20px;
+#kkikki_mini img {
+    width: 100px;
+}
+
+#kkikki_mini.active {
+    display: block;
+    top: -20px;
+    left: -65px;
+    position: absolute;
+    z-index: 200;
 }
 
 .menu_position {
@@ -212,10 +227,11 @@ header {
     background-color: #f0f6fd;
     box-shadow: 0 0 7px 5px #cfddf3;
     border-radius: 10px;
-    width: 180px;
+    min-width: 160px;
+    max-width: 220px;
     min-height: 300px;
     height: 100%;
-    max-height: 400px;
+    max-height: 500px;
 
     position: relative;
     justify-content: center;
@@ -231,17 +247,20 @@ header {
 
 .menu li {
     margin-top: 20px;
-    text-decoration-color: #414141;
 }
 
 .menu li a:link {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #414141;
 }
 
+.menu li a:visited {
+    color: #414141;
+}
+
 .menu li a:hover {
-    color: #afe7c9;
+    color: #b9f5c7;
 }
 
 .profile {
@@ -288,10 +307,10 @@ header {
 }
 
 #grad_box {
-    width: 76%;
-    min-width: 200px;
+    width: 87%;
 
     bottom: 0px;
+    left: -40px;
     margin-bottom: 10px;
     position: absolute;
     justify-content: center;
@@ -299,17 +318,17 @@ header {
 }
 
 #grad_box div {
-    width: 100%;
-    height: 100px;
+    width: 90%;
+    height: 150px;
 
     background-color: #ffffff;
-    box-shadow: 0 -5px 10px #ffffff;
+    box-shadow: 0 -30px 10px #ffffff;
 }
 
 #grad_box img {
     width: 200px;
-    height: 200px;
-    top: -80px;
+    height: 210px;
+    top: -60px;
     position: absolute;
 }
 
@@ -318,14 +337,20 @@ header {
         display: none;
     }
 
-    .menu_box {
-        width: 100%;
+    .menu_position.active {
+        width: 45%;
+        height: 400px;
+        max-height: 500px;
+        display: block;
+        position: absolute;
+        margin: 5px;
+        top: 80px;
     }
 
-    .menu_position.active {
-        width: 300px;
-        display: block;
-        max-width: 400px;
+    .menu_box {
+        width: 100%;
+        position: absolute;
+        right: 0;
     }
 
     #menu_toggle {
@@ -333,15 +358,17 @@ header {
     }
 
     #post_box {
-        width: 100%;
-    }
-
-    #to-day {
-        width: 100%;
+        width: 95%;
     }
 
     #grad_box {
         width: 95%;
+        position: absolute;
+        left: 15px;
+    }
+
+    #grad_box div {
+        width: 100%;
     }
 
     #top_box {
@@ -357,40 +384,21 @@ header {
 
 @media (max-width: 600px) {
     #top_box {
-        margin: 0;
+        width: 95%;
     }
 
-    #category_position {
-        position: relative;
-        margin-top: 10px;
-        left: 30px;
-        display: flex;
-        flex-direction: row;
-        height: 100px;
-        width: 100%;
-    }
-
-    #category_box {
-        width: 100%;
-    }
-
-    .category {
-        width: 30%;
+    #user_info {
+        left: 10px;
     }
 }
 
 @media (max-width: 500px) {
-    #post_container {
-        column-count: 1;
-        left: 20px;
+    #post_box {
+        width: 90%;
+        left: 2px;
     }
 
-    #user_info {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 20%;
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
+    #post_container {
+        column-count: 1;
     }
 }

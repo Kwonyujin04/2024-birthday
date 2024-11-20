@@ -70,15 +70,16 @@ header {
     width: 100%;
     justify-content: center;
     position: relative;
+    padding-bottom: 150px;
 }
 
 #top_box {
     width: 75%;
-    height: 80px;
+    height: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 #to-day {
@@ -86,6 +87,7 @@ header {
     font-weight: bold;
     top: 10px;
     text-align: center;
+    margin: 5px;
 }
 
 #post_box {
@@ -97,7 +99,6 @@ header {
     gap: 40px;
     justify-content: center;
     margin: 15px;
-    margin-bottom: 150px;
 }
 
 /* 포스트를 담고 있는 박스 */
@@ -120,7 +121,7 @@ header {
     border-radius: 10px;
     width: 100%;
     box-shadow: 0 0 5px 3px #f5fbfa;
-    font-size: 12px;
+    font-size: 14px;
     align-items: center;
 
     overflow-wrap: break-word;
@@ -163,6 +164,22 @@ header {
     flex-direction: row-reverse;
 }
 
+#kkikki_mini {
+    display: none;
+}
+
+#kkikki_mini img {
+    width: 100px;
+}
+
+#kkikki_mini.active {
+    display: block;
+    top: -20px;
+    left: -65px;
+    position: absolute;
+    z-index: 200;
+}
+
 .menu_position {
     width: 20%;
     height: 60%;
@@ -180,10 +197,11 @@ header {
     background-color: #f0f6fd;
     box-shadow: 0 0 7px 5px #cfddf3;
     border-radius: 10px;
-    width: 180px;
+    min-width: 160px;
+    max-width: 220px;
     min-height: 300px;
     height: 100%;
-    max-height: 400px;
+    max-height: 500px;
 
     position: relative;
     justify-content: center;
@@ -199,17 +217,20 @@ header {
 
 .menu li {
     margin-top: 20px;
-    text-decoration-color: #414141;
 }
 
 .menu li a:link {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #414141;
 }
 
+.menu li a:visited {
+    color: #414141;
+}
+
 .menu li a:hover {
-    color: #afe7c9;
+    color: #b9f5c7;
 }
 
 .profile {
@@ -256,9 +277,10 @@ header {
 }
 
 #grad_box {
-    width: 80%;
+    width: 87%;
 
     bottom: 0px;
+    left: -40px;
     margin-bottom: 10px;
     position: absolute;
     justify-content: center;
@@ -266,17 +288,17 @@ header {
 }
 
 #grad_box div {
-    width: 100%;
-    height: 100px;
+    width: 90%;
+    height: 150px;
 
     background-color: #ffffff;
-    box-shadow: 0 -5px 15px #ffffff;
+    box-shadow: 0 -30px 10px #ffffff;
 }
 
 #grad_box img {
     width: 200px;
-    height: 200px;
-    top: -80px;
+    height: 210px;
+    top: -60px;
     position: absolute;
 }
 
@@ -285,14 +307,20 @@ header {
         display: none;
     }
 
-    .menu_box {
-        width: 100%;
+    .menu_position.active {
+        width: 45%;
+        height: 400px;
+        max-height: 500px;
+        display: block;
+        position: absolute;
+        margin: 5px;
+        top: 80px;
     }
 
-    .menu_position.active {
-        width: 300px;
-        display: block;
-        max-width: 400px;
+    .menu_box {
+        width: 100%;
+        position: absolute;
+        right: 0;
     }
 
     #menu_toggle {
@@ -309,6 +337,12 @@ header {
 
     #grad_box {
         width: 95%;
+        position: absolute;
+        left: 15px;
+    }
+
+    #grad_box div {
+        width: 100%;
     }
 
     #top_box {
@@ -330,5 +364,9 @@ header {
 
     #post_container {
         column-count: 1;
+    }
+
+    #to-day {
+        font-size: 13px;
     }
 }

@@ -8,7 +8,7 @@ if (writeDate) {
 }
 
 if (todayDate) {
-    todayDate.textContent = `${today.getMonth() + 1}월 ${today.getDate()}일생 여러분 생일 축하드립니다.`;
+    todayDate.textContent = `${today.getMonth() + 1}월 ${today.getDate()}일생 여러분 생일 축하드립니다🥳`;
 }
 
 const birthdayMonth = 9;

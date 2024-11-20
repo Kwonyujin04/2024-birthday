@@ -1,12 +1,13 @@
 export function clickLike() {
     const likeCount = localStorage.getItem("likeCount");
+    const kkikki = document.getElementById("kkikki_mini");
 
-    if (likeCount === "false") {
+    if (likeCount === "false" || likeCount === null) {
         localStorage.setItem("likeCount", "true"); // 좋아요 설정
-        console.log("좋아요가 왔습니다."); // 좋아요가 처음 눌린 경우
+        kkikki.classList.add('active');
         changeLink();
     } else if (likeCount === "true") {
-        console.log("좋아요가 있습니다. "); // 이미 좋아요가 눌린 경우
+        kkikki.classList.add('active');
     }
 }
 
@@ -18,7 +19,6 @@ function changeLink() {
         if (likeCount === "true") {
             // 좋아요가 눌린 상태일 때 링크 설정
             Link.href = "BDB_random.html";
-            console.log(Link.href);
         }
         else {
             // 기본 링크로 설정
@@ -29,10 +29,21 @@ function changeLink() {
     }
 }
 
+function apKkikki() {
+    const kkikki = document.getElementById("kkikki_mini");
+    const likeCount = localStorage.getItem("likeCount");
+    if (likeCount === "true") {
+        kkikki.classList.add('active');
+    }
+    else {
+        kkikki.classList.remove('active');
+    }
+}
+
 window.addEventListener("load", () => {
-    // 로컬 스토리지에 likeCount가 없으면 기본값 false로 설정
     if (localStorage.getItem("likeCount") === null) {
         localStorage.setItem("likeCount", "false");
     }
-    changeLink(); // 페이지 로드 시 링크 설정
+    changeLink();
+    apKkikki();
 });
