@@ -80,7 +80,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     font-family: "Nanum Gothic", sans-serif;
     font-style: normal;
@@ -136,6 +136,33 @@ header {
     background-color: #afe7c9;
     color: #414141;
     border: 2px solid #89cca8;
+}
+
+#post_box {
+    width: 75%;
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    font-family: "Nanum Gothic", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.post {
+    width: 28%;
+    position: relative;
+    display: grid;
+    gap: 15px;
+    margin: 15px;
+}
+
+.post img {
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 8px 5px #e9f2ff;
+    border-radius: 10px;
 }
 
 #kkikki_mini {
@@ -296,7 +323,7 @@ header {
     }
 
     #post_box {
-        width: 95%;
+        width: 100%;
     }
 
     #to-day {
@@ -319,8 +346,15 @@ header {
 }
 
 @media (max-width: 800px) {
-    #post_container {
-        column-count: 2;
+    #post_box {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .post {
+        text-align: center;
+        width: 80%;
     }
 }
 
