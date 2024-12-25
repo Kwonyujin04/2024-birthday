@@ -330,8 +330,8 @@ header {
 
 footer {
     width: 100%;
-    height: 55px;
-    bottom: 0px;
+    height: 80px;
+    bottom: 70px;
     font-size: 10px;
     text-align: center;
     margin-top: 20px;
@@ -348,7 +348,6 @@ footer a {
 }
 
 footer p {
-    display: flex;
     justify-content: center;
 }
 
@@ -360,7 +359,6 @@ footer span {
     .menu_position {
         display: none;
     }
-
 
     .menu_position.active {
         width: 45%;
@@ -425,11 +423,31 @@ footer span {
         text-align: center;
         width: 80%;
     }
+
+    #top_box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #top_box_hint {
+        width: 95%;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 500px) {
     #post_container {
         column-count: 1;
         left: 20px;
+    }
+
+    #top_box_hint {
+        width: 91%;
+        padding: 10px;
+    }
+
+    #top_box {
+        width: 91%;
+        padding: 10px;
     }
 }

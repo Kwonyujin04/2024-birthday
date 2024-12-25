@@ -309,8 +309,8 @@ header {
 
 footer {
     width: 100%;
-    height: 55px;
-    bottom: 0px;
+    height: 80px;
+    bottom: 70px;
     font-size: 10px;
     text-align: center;
     margin-top: 20px;
@@ -327,7 +327,6 @@ footer a {
 }
 
 footer p {
-    display: flex;
     justify-content: center;
 }
 
@@ -387,6 +386,11 @@ footer span {
     #post_container {
         column-count: 2;
     }
+
+    #top_box {
+        width: 95%;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -401,5 +405,10 @@ footer span {
 
     #to-day {
         font-size: 13px;
+    }
+
+    #top_box {
+        width: 91%;
+        padding: 10px;
     }
 }
