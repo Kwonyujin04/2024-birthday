@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&display=swap');
 
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
 body {
     background-color: #dbe2eb;
     width: 98%;
@@ -19,7 +25,6 @@ body {
     height: 100%;
     position: relative;
     margin: 10px;
-    padding-bottom: 10px;
 
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 400;
@@ -70,13 +75,13 @@ header {
     width: 100%;
     justify-content: center;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 #top_box {
     width: 75%;
     position: relative;
-    margin: 20px;
+    margin-top: 20px;
 
     font-family: "Nanum Gothic", sans-serif;
     font-style: normal;
@@ -84,20 +89,19 @@ header {
 }
 
 #user_info {
-    width: 98%;
+    width: 90%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    left: 70px;
+    padding-left: 50px;
 }
 
 #user_info img {
     min-width: 150px;
     width: 30%;
     max-width: 220px;
-    border-radius: 50%;
+    border-radius: 30px;
     box-shadow: 0 0 8px 5px #dbe2eb;
-    margin-right: 30px;
 }
 
 .disc {
@@ -312,7 +316,6 @@ header {
     bottom: 0px;
     left: -40px;
     margin-bottom: 10px;
-    position: absolute;
     justify-content: center;
     display: flex;
 }
@@ -328,8 +331,37 @@ header {
 #grad_box img {
     width: 200px;
     height: 210px;
-    top: -60px;
     position: absolute;
+    bottom: 60px;
+}
+
+
+footer {
+    width: 100%;
+    height: 55px;
+    bottom: 0px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+
+    background-color: #e0f8e5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+footer span {
+    margin: 0 10px 0 10px
 }
 
 @media (max-width: 900px) {
@@ -363,7 +395,7 @@ header {
 
     #grad_box {
         width: 95%;
-        position: absolute;
+
         left: 15px;
     }
 
@@ -372,7 +404,8 @@ header {
     }
 
     #top_box {
-        width: 100%;
+        justify-content: center;
+        width: 95%;
     }
 }
 
@@ -384,11 +417,11 @@ header {
 
 @media (max-width: 600px) {
     #top_box {
-        width: 95%;
+        width: 90%;
     }
 
     #user_info {
-        left: 10px;
+        padding-left: 20%;
     }
 }
 
@@ -400,5 +433,9 @@ header {
 
     #post_container {
         column-count: 1;
+    }
+
+    #user_info img {
+        width: 100%;
     }
 }

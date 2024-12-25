@@ -9,45 +9,70 @@
 </head>
 
 <body>
-    <div class="content_box">
-        <header>
-            <img id="menu_toggle" src="img/menu_button" alt="menu-img">
-            </label>
-            <div class="top_logo">
-                <a href="index.html">
-                    <img src="img/BDB_logo_new.png" alt="logo_img">
-                </a>
-            </div>
-        </header>
-        <div id="body_box">
-            <div id="top_box">
-                <span>선물을 드리겠습니다! </span>
-                <p>선물받기 버튼을 누르면 랜덤으로 선물을 받을 수 있습니다. </p>
+    <div id="wrap">
+        <div class="content_box">
+            <header>
+                <img id="menu_toggle" src="img/menu_button" alt="menu-img">
+                </label>
+                <div class="top_logo">
+                    <a href="index.html">
+                        <img src="img/BDB_logo_new.png" alt="logo_img">
+                    </a>
+                </div>
+            </header>
+            <div id="body_box">
+                <div id="top_box">
+                    <span>BDB가 준비한 특급 선물! </span>
+                    <p>선물받기 버튼을 누르면 아래의 끼끼 키링을 받을 수 있을지도?...</p>
+                </div>
+                <div id="post_box">
+                    <div class="post">
+                        <p>당장 갖고싶은 끼끼 키링! 얻는 방법을 알아봅시다. </p>
+                        <img src="img/present-1.jpg" alt="present1">
+                    </div>
+                    <div class="post">
+                        <p>'선물받기' 버튼을 통해 선물이 당첨되면 해당 화면을 캡쳐합니다. </p>
+                        <img src="img/present-2.png" alt="present2">
+                    </div>
+                    <div class="post">
+                        <p>아래의 이메일로 캡쳐를 첨부해 메시지를 작성하면 추첨을 통해 1분께 키링을 증정! </p>
+                        <span id="e-mail">2310867@sookmyung.ac.kr</span>
+                    </div>
+                </div>
                 <div id="random_box">
-                    <img src="img/BDB_kkikki_normal.png" alt="끼끼">
-                    <button id="random_button" onclick="getRandom(100, 50)">🌟선물받기</button>
+                    <button id="random_button" onclick="getRandom(100, 10)">🌟선물받기</button>
                 </div>
             </div>
+            <footer>
+                <nav>
+                    <a href='https://github.com/Kwonyujin04' target='_blank'>Github_Kwonyujin04</a>
+                </nav>
+                <p>
+                    <span>권유진</span><br />
+                    <span>e-mail : 2310867@sookmyung.ac.kr</span><br />
+                    <span>Copyright 2024. Kwonyujin04. </span>
+                </p>
+            </footer>
         </div>
-    </div>
-    <div class="menu_position">
-        <div id="kkikki_mini">
-            <img src="img/BDB_kkikki_mini.png" alt="비밀 끼끼">
-        </div>
-        <div class="menu_box">
-            <ul class="menu">
-                <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
-                <li class="menu_detail"><a href="BDB_writePost.html">메시지 작성하기</a></li>
-                <li class="menu_detail"><a href="BDB_my_page.html">마이페이지</a></li>
-                <li class="menu_detail"><a href="BDB_community.html">커뮤니티 가기</a></li>
-            </ul>
-            <div class="profile">
-                <div class="profile_img">
-                    <img src="img/profile_img.JPG" alt="profile">
-                </div>
-                <div class="my_name">
-                    <span>권유진</span>
-                    <span id="d-day"></span>
+        <div class="menu_position">
+            <div id="kkikki_mini">
+                <img src="img/BDB_kkikki_mini.png" alt="비밀 끼끼">
+            </div>
+            <div class="menu_box">
+                <ul class="menu">
+                    <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
+                    <li class="menu_detail"><a href="BDB_writePost.html">메시지 작성하기</a></li>
+                    <li class="menu_detail"><a href="BDB_my_page.html">마이페이지</a></li>
+                    <li class="menu_detail"><a href="BDB_community.html">커뮤니티 가기</a></li>
+                </ul>
+                <div class="profile">
+                    <div class="profile_img">
+                        <img src="img/profile_img.JPG" alt="profile">
+                    </div>
+                    <div class="my_name">
+                        <span>권유진</span>
+                        <span id="d-day"></span>
+                    </div>
                 </div>
             </div>
         </div>

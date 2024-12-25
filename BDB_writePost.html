@@ -9,66 +9,80 @@
 </head>
 
 <body>
-    <div class="content_box">
-        <header>
-            <img id="menu_toggle" src="img/menu_button" alt="menu-img">
-            </label>
-            <div class="top_logo">
-                <a href="index.html">
-                    <img src="img/BDB_logo_new.png" alt="logo_img">
-                </a>
-            </div>
-        </header>
-        <div id="body_box">
-            <div id="top_box">
-                <label for="write_date">전달 날짜:</label>
-                <input type="date" id="write_date" value="" min="" />
-                <div id="color_box">
-                    <button class="color_button blue" data-color="#CBF3FE"> </button>
-                    <button class="color_button pink" data-color="#FFE6EE"> </button>
-                    <button class="color_button yellow" data-color="#FFFACC"> </button>
-                    <button class="color_button green" data-color="#CEFDD3"> </button>
-                    <button class="color_button purple" data-color="#E1E5FE"> </button>
+    <div id="wrap">
+        <div class="content_box">
+            <header>
+                <img id="menu_toggle" src="img/menu_button" alt="menu-img">
+                </label>
+                <div class="top_logo">
+                    <a href="index.html">
+                        <img src="img/BDB_logo_new.png" alt="logo_img">
+                    </a>
+                </div>
+            </header>
+            <div id="body_box">
+                <div id="top_box">
+                    <label for="write_date">생일을 골라주세요! </label>
+                    <input type="date" id="write_date" value="" min="" />
+                    <div id="color_box">
+                        <button class="color_button blue" data-color="#CBF3FE"> </button>
+                        <button class="color_button pink" data-color="#FFE6EE"> </button>
+                        <button class="color_button yellow" data-color="#FFFACC"> </button>
+                        <button class="color_button green" data-color="#CEFDD3"> </button>
+                        <button class="color_button purple" data-color="#E1E5FE"> </button>
+                    </div>
+                </div>
+                <div id="post_box">
+                    <div id="post_content">
+                        <table>
+                            <tr>
+                                <td>To. </td>
+                                <td><input type="text" id="to_name" placeholder="수신인 이름을 적어주세요. " maxlength="10" /></td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                                <td><textarea id="content" placeholder="축하 메시지를 작성해주세요. " maxlength="300"></textarea>
+                                </td>
+                            </tr>
+                            <tr id="name">
+                                <td></td>
+                                <td>권유진</td>
+                            </tr>
+                        </table>
+                        <button id="register">메시지 등록하기</button>
+                    </div>
                 </div>
             </div>
-            <div id="post_box">
-                <div id="post_content">
-                    <table>
-                        <tr>
-                            <td>제목</td>
-                            <td><input type="text" id="to_name" placeholder="축하할 이름을 적어주세요. " /></td>
-                        </tr>
-                        <tr>
-                            <td>내용</td>
-                            <td><textarea id="content" placeholder="내용을 입력하세요. "></textarea></td>
-                        </tr>
-                        <tr>
-                            <td>권유진</td>
-                        </tr>
-                    </table>
-                    <button id="register">등록</button>
-                </div>
-            </div>
+            <footer>
+                <nav>
+                    <a href='https://github.com/Kwonyujin04' target='_blank'>Github_Kwonyujin04</a>
+                </nav>
+                <p>
+                    <span>권유진</span><br />
+                    <span>e-mail : 2310867@sookmyung.ac.kr</span><br />
+                    <span>Copyright 2024. Kwonyujin04. </span>
+                </p>
+            </footer>
         </div>
-    </div>
-    <div class="menu_position">
-        <div id="kkikki_mini">
-            <img src="img/BDB_kkikki_mini.png" alt="비밀 끼끼">
-        </div>
-        <div class="menu_box">
-            <ul class="menu">
-                <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
-                <li class="menu_detail"><a href="BDB_writePost.html">메시지 작성하기</a></li>
-                <li class="menu_detail"><a href="BDB_my_page.html">마이페이지</a></li>
-                <li class="menu_detail"><a href="BDB_community.html">커뮤니티 가기</a></li>
-            </ul>
-            <div class="profile">
-                <div class="profile_img">
-                    <img src="img/profile_img.JPG" alt="profile">
-                </div>
-                <div class="my_name">
-                    <span>권유진</span>
-                    <span id="d-day"></span>
+        <div class="menu_position">
+            <div id="kkikki_mini">
+                <img src="img/BDB_kkikki_mini.png" alt="비밀 끼끼">
+            </div>
+            <div class="menu_box">
+                <ul class="menu">
+                    <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
+                    <li class="menu_detail"><a href="BDB_writePost.html">메시지 작성하기</a></li>
+                    <li class="menu_detail"><a href="BDB_my_page.html">마이페이지</a></li>
+                    <li class="menu_detail"><a href="BDB_community.html">커뮤니티 가기</a></li>
+                </ul>
+                <div class="profile">
+                    <div class="profile_img">
+                        <img src="img/profile_img.JPG" alt="profile">
+                    </div>
+                    <div class="my_name">
+                        <span>권유진</span>
+                        <span id="d-day"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,7 +92,6 @@
     <script src="js/writePost.js"></script>
     <script src="js/menu_popup.js"></script>
     <script src="js/Dday.js"></script>
-    <script src="js/colorBtn.js"></script>
     <script src="js/likeBtn.js" type="module" defer></script>
 </body>
 

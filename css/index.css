@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&display=swap');
 
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
 body {
     background-color: #dbe2eb;
     width: 98%;
@@ -19,7 +25,6 @@ body {
     height: 100%;
     position: relative;
     margin: 10px;
-    padding-bottom: 10px;
 
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 400;
@@ -92,7 +97,6 @@ header {
     gap: 40px;
     justify-content: center;
     margin: 15px;
-    margin-bottom: 100px;
 }
 
 .post {
@@ -104,11 +108,13 @@ header {
     max-height: 300px;
     row-gap: 15px;
     position: relative;
+    box-shadow: 0 0 8px 5px #dbe2eb;
 }
 
 
 .post:nth-child(1) {
-    background-color: #ff8fcf;
+    background: rgb(248, 248, 255);
+    background: linear-gradient(331deg, rgba(248, 248, 255, 1) 0%, rgba(255, 143, 207, 1) 35%, rgb(156, 116, 207) 100%);
     color: #ffffff;
     font-size: large;
     font-weight: bold;
@@ -117,7 +123,7 @@ header {
 }
 
 #to_community {
-    color: #ffffff;
+    color: #000000;
     text-align: right;
     font-size: 16px;
     position: absolute;
@@ -253,6 +259,33 @@ header {
     color: #ff3eaa;
 }
 
+footer {
+    width: 100%;
+    height: 55px;
+    bottom: 0px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+
+    background-color: #e0f8e5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+footer span {
+    margin: 0 10px 0 10px
+}
 
 @media (max-width: 900px) {
     .menu_position {

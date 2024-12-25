@@ -5,6 +5,7 @@ export function clickLike() {
     if (likeCount === "false" || likeCount === null) {
         localStorage.setItem("likeCount", "true"); // 좋아요 설정
         kkikki.classList.add('active');
+        alert("메뉴창에 끼끼가 놀러왔어요! 선물받기를 눌러볼까요? ")
         changeLink();
     } else if (likeCount === "true") {
         kkikki.classList.add('active');
