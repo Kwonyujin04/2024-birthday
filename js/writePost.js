@@ -24,7 +24,7 @@ document.getElementById("register").addEventListener("click", () => {
     const newPost = {
         id: myPost.length + 1,
         to_name: toName,
-        from_name: '권유진',
+        from_name: '끼끼',
         postContent: content,
         date: writeDate.value,
         back_color: backColor || "#CBF3FE"

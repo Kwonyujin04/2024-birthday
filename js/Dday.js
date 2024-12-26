@@ -11,8 +11,8 @@ if (todayDate) {
     todayDate.textContent = `${today.getMonth() + 1}월 ${today.getDate()}일생 여러분 생일 축하드립니다🥳`;
 }
 
-const birthdayMonth = 9;
-const birthdayDay = 12;
+const birthdayMonth = 7;
+const birthdayDay = 7;
 
 let birthday = new Date(today.getFullYear(), birthdayMonth - 1, birthdayDay);
 
